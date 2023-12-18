@@ -75,7 +75,7 @@ developing applications that use %{name}.
 #------------------------------------
 
 %prep
-%autosetup - n %{oname}-%{version} -p1
+%autosetup -n %{oname}-%{version} -p1
 
 %build
 %meson

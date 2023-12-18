@@ -37,7 +37,7 @@ number. The ABI is unstable.
 Summary:	Support library for GNOME games - translations
 Group:		System/Internationalization
 BuildArch:	noarch
-
+Conflicts:  libgnome-games-support-i18n < 2.0.0
 Obsoletes:	libgames-support-i18n < 1.0.2-2
 
 %description	i18n
@@ -53,7 +53,7 @@ This package contains translations used by %{name}.
 Summary:	Library for %{name}
 Group:		System/Libraries
 Requires:	%{name}-i18n = %{version}-%{release}
-
+Conflicts: lib64gnome-games-support2 < 2.0.0
 Obsoletes:	%{_lib}games-support2 < 1.0.2-2
 
 %description -n %{libname}
@@ -68,6 +68,7 @@ Summary:	Development package for %{name}
 Group:		Development/C++
 Requires:	%{libname} = %{version}-%{release}
 Provides:	%{name}-devel = %{version}-%{release}
+Conflicts: lib64gnome-games-support-devel < 2.0.0
 
 Obsoletes:	%{_lib}games-support-devel < 1.0.2-2
 
